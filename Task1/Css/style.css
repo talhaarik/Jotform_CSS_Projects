@@ -1,0 +1,179 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  /* to appear in the middle of the page. */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.line {
+  width: 360px;
+  color: #e0e0e0;
+}
+
+.container {
+  width: 400px;
+  height: 300px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  overflow-y: auto;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  align-items: center;
+}
+
+.header-content h1 {
+  font-size: 16px;
+  color: #333333;
+  font-weight: 600;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 20px 0px 20px;
+  padding: 0;
+}
+
+.category h1 {
+  color: #828282;
+  font-size: 13px;
+  font-weight: 300;
+  padding: 0;
+}
+
+.group {
+  margin: 16px 20px 0px 20px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.group h1 {
+  font-size: 13px;
+  color: #4f4f4f;
+  font-weight: 600;
+}
+
+.g1-line {
+  width: 120px;
+  height: 4px;
+  background: rgba(0, 255, 110, 0.2);
+  color: #219653;
+  border-radius: 4px;
+}
+
+.g2-line {
+  width: 120px;
+  height: 4px;
+  background: rgba(255, 179, 0, 0.2);
+  color: #f2994a;
+  border-radius: 4px;
+}
+
+.g3-line {
+  width: 120px;
+  height: 4px;
+  background: rgba(255, 21, 0, 0.2);
+  color: #eb5757;
+  border-radius: 4px;
+}
+
+h2 {
+  color: #bdbdbd;
+  font-size: 11px;
+}
+
+.project-side {
+  display: flex;
+  flex-direction: row;
+}
+
+.project-side-icon {
+  padding-right: 5px;
+}
+
+.project-side-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-content {
+  margin-bottom: 0px;
+}
+
+h3 {
+  font-size: 11px;
+}
+
+.on-track {
+  color: #219653;
+  position: relative;
+  margin: 0;
+}
+
+.at-risk {
+  color: #f2994a;
+  position: relative;
+  margin: 0;
+}
+
+.off-track {
+  color: #eb5757;
+  position: relative;
+  margin: 0;
+}
+
+.on-track::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -10px;
+  width: 7px;
+  height: 7px;
+  background-color: #219653;
+  border-radius: 50%;
+}
+
+.at-risk::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -10px;
+  width: 7px;
+  height: 7px;
+  background-color: #f2994a;
+  border-radius: 50%;
+}
+
+.off-track::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -10px;
+  width: 7px;
+  height: 7px;
+  background-color: #eb5757;
+  border-radius: 50%;
+}
+
+.status-side {
+  display: flex;
+  flex-direction: column;
+  margin-left: 55px;
+}
+
+.owner {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid whitesmoke;
+}
